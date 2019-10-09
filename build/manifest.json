@@ -1,0 +1,36 @@
+{
+	"name": "Chrome Extension Template",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "Basic template for Chrome Extensions.",
+	"homepage_url": "https://github.com/mcorso21",
+	"icons": {
+	},
+	"background": {
+		"persistent": true,
+		"scripts": ["./js/background.js"]
+	},
+	"browser_action": {
+		"default_title": "Chrome Extension Template",
+		"default_popup": "./html/browser_action.html"
+	},
+	"permissions": [
+		"contentSettings",
+		"cookies",
+		"debugger",
+		"notifications",
+		"storage",
+		"tabs",
+		"<all_urls>"
+	],
+	"content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./js/inject.js"
+            ]
+        }
+	]
+}

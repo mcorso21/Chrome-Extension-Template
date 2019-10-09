@@ -1,0 +1,113 @@
+/* 
+
+BG colors:
+    - #000000
+    - #212121
+    - #303030
+    - #424242
+
+Font Colors:
+    - #FFFFFF
+        - Opacities: 100%, 70%, 50%, 12% (dividers) 
+
+*/
+html {
+    min-width: 770px;
+    min-height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #303030;
+    margin-bottom: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 1px;  
+    background: #303030;  
+}
+
+body {
+    min-width: 770px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    background-color: #303030;
+}
+
+#mainPopup {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    border: 5px solid #303030;
+    margin: 0;
+    /* background-color: #212121; */
+    background-color: #303030;
+}
+h1 {
+    font-size: 2em;
+}
+.text {
+    color: #FFFFFF;
+}
+.primary {
+    opacity: 1;
+}
+.secondary {
+    opacity: .75;
+}
+.disabled {
+    opacity: .5;
+}
+.divider {
+    opacity: .2;
+}
+
+.table {
+    width: 700px;
+    table-layout: fixed;
+}
+
+.bordered {
+    border-top: solid 1px rgb(255, 255, 255, .2);
+    border-bottom: solid 1px rgb(255, 255, 255, .2);
+    margin: 0;
+    padding: 0;
+}
+
+.settings-sub-header {
+    border-bottom: solid 2px rgb(255, 255, 255, .5);
+    margin: 25px 0px 25px 0px;
+}
+
+.settings-sub-section {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    margin: 50px;
+    padding: 50px;
+    background-color: #424242;
+}
+
+.underlined {
+    border-bottom: solid 1px rgb(255, 255, 255, .05);
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+}
+
+.btn{
+    margin: 0;
+    cursor: pointer;
+}
+.drop-down-box{
+    /* border: solid 1px; */
+}
+
+#content {
+    
+}
+
+.flex {
+    display : flex;
+    height : auto;
+    min-height : 100%;
+}
